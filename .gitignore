@@ -1,0 +1,10 @@
+*.bat
+*.iml
+*.ipynb
+.idea/
+.ipynb_checkpoints/
+build/
+dist/
+logs/
+*egg-info/
+__pycache__/
