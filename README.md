@@ -44,5 +44,3 @@ prices_df = indicators.set_stochastic_oscillator(prices_df)
 // Only want today's values?
 prices_df = prices_df.tail(1) # Make it one row so we don't have to keep hunting for the tail
 ```
-
-Spongecake is the nickname we have for our baby son and I couldn't think of anything else at the time! :)
