@@ -8,3 +8,5 @@ dist/
 logs/
 *egg-info/
 __pycache__/
+spongecake-workspace.code-workspace
+.vscode/settings.json

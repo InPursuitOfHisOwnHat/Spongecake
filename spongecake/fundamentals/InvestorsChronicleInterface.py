@@ -188,6 +188,18 @@ class InvestorsChronicleInterface(FinancialWebsiteInterface):
 
     # ======================================================================================================================================================================================
 
+    def get_date_of_latest_income_sheet(self, tidm, market='LSE'):
+        df_income = self.get_ic_income_sheet(tidm, market)
+        return df_income.columns.max()
+
+    # ======================================================================================================================================================================================
+
+    def get_date_of_latest_balance_sheet(self, tidm, market='LSE'):
+        df_balance = self.get_ic_balance_sheet(tidm, market)
+        return df_balance.columns.max()
+
+    # ======================================================================================================================================================================================
+
     def get_roce_pct(self, tidm, market='LSE'):
         df_income = self.get_ic_income_sheet(tidm, market)
         df_balance = self.get_ic_balance_sheet(tidm, market)
