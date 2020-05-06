@@ -1,0 +1,1 @@
+from spongecake.prices.YahooPricesInterface import YahooPricesInterface

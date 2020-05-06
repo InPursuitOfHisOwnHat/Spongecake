@@ -1,7 +1,7 @@
 import logging
 import pandas_datareader as pdr
 import pandas as pd
-from spongecake.technicals.PricesInterface import PricesInterface, PRICES_COLS
+from spongecake.prices.PricesInterface import PricesInterface, PRICES_COLS
 from datetime import date, timedelta
 
 
