@@ -1,4 +1,4 @@
-from spongecake.technicals.PricesInterface import PRICES_COLS
+from spongecake.prices.PricesInterface import PRICES_COLS
 import logging
 import pandas as pd
 
