@@ -280,7 +280,7 @@ class InvestorsChronicleInterface(FinancialWebsiteInterface):
         log.info('Shares Outstanding for {0} is: {1}'.format(tidm, shares_outstanding))
         df_income = self.get_ic_income_sheet(tidm, market)
         latest_data = max(df_income.columns)
-        ebit = float(df_income.loc[IC_INCOME_DATA.ROW_NET_INCOME_AFTER_TAXES][latest_data]) * 1000000
+        ebit = float(df_income.loc[IC_INCOME_DATA.ROW_NET_INCOME_BEFORE_TAXES][latest_data]) * 1000000
         log.info('EBIT for {0} is: {1}'.format(tidm, ebit))
 
         # Price is in Pence, remember
