@@ -1,5 +1,5 @@
 # Spongecake Financials
-Package that screen-scrapes Fundamentals and calculates a couple of Technicals for UK Equities
+Package that screen-scrapes Fundamentals (currently just from Investors Chronicle) and calculates a couple of Technicals for UK Equities.
 
 # Usage Example - Fundamentals
 ```
