@@ -19,5 +19,7 @@ class PRICES_COLS:
     COL_CLOSE = 'CLOSE'
     COL_HIGH = 'HIGH'
     COL_LOW = 'LOW'
+    COL_ADJUSTED_CLOSE = 'ADJ CLOSE'
+    COL_OPEN = 'OPEN'
 
 

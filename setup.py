@@ -1,6 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.txt", "r") as fh:
     long_description = fh.read()
 print('Number of pacakages: {0}'.format(len(setuptools.find_packages())))
 for p in setuptools.find_packages():

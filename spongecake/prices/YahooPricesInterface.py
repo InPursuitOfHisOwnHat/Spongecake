@@ -29,6 +29,8 @@ class YahooPricesInterface(PricesInterface):
         df_prices = self._rename_column(df_prices, YAHOO_DATA_COLUMNS.YHF_CLOSE_COLUMN, PRICES_COLS.COL_CLOSE)
         df_prices = self._rename_column(df_prices, YAHOO_DATA_COLUMNS.YHF_HIGH_COLUMN, PRICES_COLS.COL_HIGH)
         df_prices = self._rename_column(df_prices, YAHOO_DATA_COLUMNS.YHF_LOW_COLUMN, PRICES_COLS.COL_LOW)
+        df_prices = self._rename_column(df_prices, YAHOO_DATA_COLUMNS.YHF_OPEN_COLUMN, PRICES_COLS.COL_OPEN)
+        df_prices = self._rename_column(df_prices, YAHOO_DATA_COLUMNS.YHF_ADJ_CLOSE_COLUMN, PRICES_COLS.COL_ADJUSTED_CLOSE)
 
         self.prices_cache[tidm] = df_prices
         return df_prices
@@ -38,3 +40,5 @@ class YAHOO_DATA_COLUMNS:
     YHF_CLOSE_COLUMN = 'Close'
     YHF_HIGH_COLUMN = 'High'
     YHF_LOW_COLUMN = 'Low'
+    YHF_OPEN_COLUMN = 'Open'
+    YHF_ADJ_CLOSE_COLUMN  = 'Adj Close'
