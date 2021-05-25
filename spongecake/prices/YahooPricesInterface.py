@@ -6,10 +6,31 @@ from datetime import date, timedelta
 
 
 class YahooPricesInterface(PricesInterface):
+    '''
+    Provides an interface into the Yahoo free prices feed and caching services.
+    '''
 
     prices_cache = {}
 
     def get_yahoo_prices(self, tidm, market='L', from_date=(date.today() - timedelta(days=365)), to_date=date.today(), force_cache_refresh=False):
+        '''
+        Download the latest prices from Yahoo for a particular instrument and
+        add to the cache.
+
+        Parameters:
+
+            tidm: Display mnemonic of stock
+            market: Market code where stock is traded (default to London)
+            from_date: Start of date range to retrieve prices for (defaults to one year prior to current date)
+            to_date: End of date range to retrieve prices for (defaults to current date)
+            force_cache_refresh: Do not use the cache for this, get fresh prices from the Yahoo feed
+            
+        Returns
+
+            A Dataframe of Yahoo prices for a particular stock
+            
+        '''
+        
         if tidm in self.prices_cache.keys() and force_cache_refresh is False:
             logging.info('Found {0} in Yahoo Historic Prices cache returning that instead'.format(tidm))
             return self.prices_cache[tidm]

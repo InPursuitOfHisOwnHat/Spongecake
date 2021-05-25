@@ -1,7 +1,10 @@
 import pandas as pd
 
 class PricesInterface:
-
+    '''
+    Provides some common interface functions required to clean or smooth out the
+    data
+    '''
     @staticmethod
     def _rename_column(df_prices, old_name, new_name):
         return df_prices.rename(columns={old_name : new_name})
