@@ -149,7 +149,7 @@ This class contains utility functions to download and, in some cases, clean-up Y
 
 #### Public Functions
 
-        def get_yahoo_prices(self, tidm, market='L', from_date=(date.today() - timedelta(days=365)), to_date=date.today(), force_cache_refresh=False):
+    def get_yahoo_prices(self, tidm, market='L', from_date=(date.today() - timedelta(days=365)), to_date=date.today(), force_cache_refresh=False):
 
 
 An example, below, shows a year's worth of prices for Vodafone, a British mobile phone retailer and operator, being retrieved and returned in a Pandas Dataframe.
