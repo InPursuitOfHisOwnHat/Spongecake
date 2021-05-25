@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Spongecake Financials is a small working (but largely unfinished) library that screen-scrapes standard fundamental financial data from websites (e.g. income, balance) and pulls it into Pandas Dataframes for further analysis. It also contains functions to calculate some technical indicators (currently just Stochastic and MACD, but it is simple to add more). The library also provides some standard fundamental calculations that may not appear on the website such as Current Ratio and EPS.
+Spongecake Financials is a small, experimental library that screen-scrapes standard fundamental financial data from websites (e.g. income, balance) and pulls it into Pandas Dataframes for further analysis. It also contains functions to calculate some technical indicators (currently just Stochastic and MACD, but it is simple to add more). The library also provides some standard fundamental calculations that may not appear on the website such as Current Ratio and EPS.
 
 For example, below the `InvestorsChronicleInterface` object is used to retrieve the balance sheet for Vodafone, a British mobile phone retailer and operator. This data is scraped from the Investors Chronicle website and returned as a Pandas Dataframe.
 
